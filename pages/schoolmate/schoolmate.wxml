@@ -1,0 +1,7 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+<icon type="info" size="60px" color="#999" id="tip"></icon>
+  <view id="tipinfo">
+    <text>校友认证后开启功能</text>
+  </view>
+</view>

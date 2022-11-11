@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<view class="infomation">
+<image class="headicon" src="/images/3.jpeg" mode="heightFix"></image>
+<text>子非鱼</text>
+</view>
+<view class="line"></view>
+<view class="item">
+<image src="/icon/信息认证.png" mode="heightFix"></image>
+<text>校友认证</text>
+<image src="../../icon/分级logo.png" mode="heightFix" class="next"></image>
+</view>
+<view class="item">
+<image src="/icon/常见问题.png" mode="heightFix"></image>
+<text>常见问题</text>
+<image src="/icon/分级logo.png" mode="heightFix" class="next"></image>
+</view>
+<view class="item">
+<image src="/icon/关于我们.png" mode="heightFix"></image>
+<text>关于我们</text>
+<image src="/icon/分级logo.png" mode="heightFix" class="next"></image>
+</view>

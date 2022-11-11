@@ -1,0 +1,13 @@
+/* pages/list/list.wxss */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tip {
+  margin-top: 100rpx;
+}
+#tipinfo {
+  margin-top: 30rpx;
+}

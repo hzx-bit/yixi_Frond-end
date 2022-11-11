@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/schoolmate/schoolmate",
+    "pages/map/map",
+    "pages/homepage/homepage",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "忆昔",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#efefef"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#000",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "活动",
+        "iconPath": "icon/活动.png",
+        "selectedIconPath": "icon/活动click.png"
+    },
+      {
+        "pagePath": "pages/schoolmate/schoolmate",
+        "text": "校友",
+        "iconPath": "icon/校友.png",
+        "selectedIconPath": "icon/校友click.png"
+    },
+      {
+      "pagePath": "pages/map/map",
+      "text": "地图",
+      "iconPath": "icon/地图.png",
+      "selectedIconPath": "icon/地图click.png"
+  },
+  {
+    "pagePath": "pages/homepage/homepage",
+    "text": "个人中心",
+    "iconPath": "icon/个人中心.png",
+    "selectedIconPath": "icon/个人中心click.png"
+  }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
