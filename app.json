@@ -1,10 +1,14 @@
 {
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  },
   "pages":[
     "pages/index/index",
     "pages/schoolmate/schoolmate",
     "pages/map/map",
     "pages/homepage/homepage",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/detailinfo/detailinfo"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -44,6 +48,5 @@
   }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
