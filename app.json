@@ -4,6 +4,8 @@
     "pages/schoolmate/schoolmate",
     "pages/map/map",
     "pages/homepage/homepage",
+    "pages/activity/activity",
+    "pages/news/news",
     "pages/logs/logs"
   ],
   "window":{

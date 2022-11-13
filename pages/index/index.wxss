@@ -1,12 +1,56 @@
 /**index.wxss**/
 .swiper-container {
   height: 150px;
+  padding: 20rpx;
 }
+
+.newsAndActivity{
+  display: flex;
+  flex-direction: column;
+}
+
+.newsActivityButton{
+  border-radius:20ch;
+  color: white;
+  background-color: #FF0062;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgb(255, 0, 98);
+}
+
 .item {
   height: 100%;
   line-height: 150px;
   text-align: center;
 }
+
+.img_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rpx;
+  justify-content: space-between;
+}
+
+.img_item{
+  position: relative;
+}
+
+.img_info{
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  color: #fff;
+  font-size: 30rpx;
+}
+
 swiper-item:nth-child(1) .item{
   background-color: lightgreen;
 }
@@ -15,4 +59,45 @@ swiper-item:nth-child(2) .item{
 }
 swiper-item:nth-child(3) .item{
   background-color: lightcoral;
+}
+
+page {
+  background: #f2f2f2;
+}
+
+/* 设置导航外层样式，绝对定位设置为fixed。z-index: 999999; 能够将 nav 布局层级结果放在最上层，避免被下层view遮挡*/
+.nav {
+  position: fixed;
+  background: white;
+  color: #353535;
+  z-index: 999999;
+  max-height: 94rpx;
+  width: 100%;
+}
+
+/* 设置为水平布局，文字居中显示 */
+.flex {
+  display: flex;
+  text-align: center;
+}
+
+/* 设置选中项的底部边框 */
+.nav .nav-item.current {
+  border-bottom: 4rpx solid;
+}
+
+/* 设置选中项的文字颜色和大小 */
+.text-selected {
+  color: #2196F3;
+  font-size: 34rpx;
+}
+
+/* 设置各项的高度、边距，同时设置flex=1，表示各项平分 */
+.nav .nav-item {
+  height: 90rpx;
+  display: inline-block;
+  line-height: 90rpx;
+  margin: 0 10rpx;
+  padding: 0 20rpx;
+  flex: 1;
 }
