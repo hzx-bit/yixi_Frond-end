@@ -1,5 +1,5 @@
 {
-  "usingComponents": {
-    
-  }
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "个人中心"
 }

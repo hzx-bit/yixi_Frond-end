@@ -5,17 +5,17 @@
 </view>
 <view class="line"></view>
 <view class="item">
-<image src="/icon/信息认证.png" mode="heightFix"></image>
+<image src="/icon/certification.png" mode="heightFix"></image>
 <text>校友认证</text>
-<image src="../../icon/分级logo.png" mode="heightFix" class="next"></image>
+<image src="/icon/next.png" mode="heightFix" class="next"></image>
 </view>
 <view class="item">
-<image src="/icon/常见问题.png" mode="heightFix"></image>
+<image src="/icon/FAquestions.png" mode="heightFix"></image>
 <text>常见问题</text>
-<image src="/icon/分级logo.png" mode="heightFix" class="next"></image>
+<image src="/icon/next.png" mode="heightFix" class="next"></image>
 </view>
 <view class="item">
-<image src="/icon/关于我们.png" mode="heightFix"></image>
+<image src="/icon/aboutus.png" mode="heightFix"></image>
 <text>关于我们</text>
-<image src="/icon/分级logo.png" mode="heightFix" class="next"></image>
+<image src="/icon/next.png" mode="heightFix" class="next"></image>
 </view>

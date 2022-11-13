@@ -29,12 +29,12 @@
   align-items: center;
   justify-content: space-between;
   height: 100rpx;
-  margin: 5rpx 10rpx;
+  margin: 15rpx 20rpx;
   border: #666 1rpx solid;
   border-radius: 8rpx;
 }
 .item image{
-  height: 30px;
+  height: 60rpx;
   margin-left: 40rpx;
 }
 
