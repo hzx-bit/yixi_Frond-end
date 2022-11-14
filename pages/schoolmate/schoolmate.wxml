@@ -18,15 +18,14 @@
   </view>
 </view>
 <!--查询结果-->
-<view class="item">
-<image src="/icon/homepage.png" mode="heightFix"></image>
-<text> xxx |2010级| 计算机 |03班
-杭州 |xxx有限公司|  开发</text>
+
+<view class="item" wx:for="{{schoolmatesList}}" wx:key="index">
+<view class="avatarAndName">
+<image src="{{item.avatarURL}}" mode="widthFix">
+</image>
+<text>{{item.name}}</text>
 </view>
-<view class="item">
-<image src="/icon/homepage.png" mode="heightFix"></image>
-<text> xxx |2010级| 软件工程 |03班
-厦门 |xxx有限公司|  测试</text>
+<text> {{item.info}}</text>
 </view>
 
 

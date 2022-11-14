@@ -33,7 +33,7 @@
   height: 100rpx;
   margin: 15rpx 20rpx;
   border: #666 1rpx solid;
-  border-radius: 8rpx;
+  border-radius: 16rpx;
 }
 .item image{
   height: 60rpx;

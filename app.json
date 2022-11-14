@@ -11,8 +11,7 @@
     "pages/news/news",
     "pages/registration/registration",
     "pages/logs/logs",
-    "pages/detailinfo/detailinfo",
-    "pages/chat/chat"
+    "pages/detailinfo/detailinfo"
   ],
   "window":{
     "backgroundTextStyle":"light",

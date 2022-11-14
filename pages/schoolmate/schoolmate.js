@@ -5,7 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-    status: false
+    status: false,
+    schoolmatesList:[
+      {
+        index: 0,
+        name:'杨过',
+        avatarURL:'../../icon/homepage.png',
+        info :'2010级| 计算机 |03班 | 杭州 |xxx有限公司|  开发'
+      },
+      {
+        index: 1,
+        name:'小龙女',
+        avatarURL:'../../icon/homepage.png',
+        info :'2012级| 计算机 |03班 | 杭州 |xxx有限公司|  销售'
+      }
+    ]
   },
   /**
    * 生命周期函数--监听页面加载

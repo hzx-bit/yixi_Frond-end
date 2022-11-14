@@ -1,6 +1,6 @@
 <!--pages/index/index.wxml-->
 <view class="flex nav">
-  <view class="nav-item  {{index==current?'text-selected current':''}}" wx:for="{{tabs}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+  <view class="nav-item  {{index==current?'text-selected current':''}}" wx:for="{{tabs}}" wx:key="index" bindtap="tabSelect" data-id="{{index}}">
     {{item}}
   </view>
 </view>
@@ -47,7 +47,7 @@
 
 <!-- 新闻列表 -->
 <view class="conatiner">
-  <view class="news-item" wx:for="{{newsList}}" wx:for-index="index">
+  <view class="news-item" wx:for="{{newsList}}" wx:key="index">
     <view class="title" bindtap="toNewsDetail" data-options="{{item.id}}" >{{item.title}}</view>
     <view class="author-info">
       <text class="author-name">作者：{{item.author}} </text>

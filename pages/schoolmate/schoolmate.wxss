@@ -51,13 +51,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 200rpx;
-  margin: 5rpx 20rpx;
-  border: rgb(175, 19, 19) 1rpx solid;
-  border-radius: 8rpx;
+  height: 180rpx;
+  margin: 20rpx 20rpx;
+  border: skyblue 2rpx solid;
+  border-radius: 20rpx;
+  box-shadow: 2rpx 2rpx gray;
   text-align: center;
 }
-.item image{
-  height: 140rpx;
-  margin-left: 40rpx;
+.item .avatarAndName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 130rpx;
+  height: 160rpx;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+}
+.item .avatarAndName image {
+  width: 130rpx;
 }
