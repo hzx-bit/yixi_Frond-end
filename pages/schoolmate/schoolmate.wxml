@@ -10,7 +10,7 @@
   <view class="top">
     <view class="search">
       <view class="search_in">
-        <image src="/icon/搜索.png"></image>
+        <image src="/icon/search.png"></image>
         <input type="text" placeholder="搜索：姓名、年级、班级"/>
         <view class="search_btn">搜索</view>
       </view>
@@ -19,19 +19,14 @@
 </view>
 <!--查询结果-->
 <view class="item">
-<image src="/icon/卡通头像.png" mode="heightFix"></image>
+<image src="/icon/homepage.png" mode="heightFix"></image>
 <text> xxx |2010级| 计算机 |03班
 杭州 |xxx有限公司|  开发</text>
 </view>
 <view class="item">
-<image src="/icon/头像.png" mode="heightFix"></image>
+<image src="/icon/homepage.png" mode="heightFix"></image>
 <text> xxx |2010级| 软件工程 |03班
 厦门 |xxx有限公司|  测试</text>
-</view>
-<view class="item2" bindtap="classchat">
-<image src="/icon/我的班级.png" mode="heightFix"></image>
-<text>我的班级</text>
-<image src="/icon/next.2.png" mode="heightFix"></image>
 </view>
 
 
