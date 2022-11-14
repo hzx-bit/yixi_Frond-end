@@ -10,7 +10,8 @@
     "pages/activity/activity",
     "pages/news/news",
     "pages/logs/logs",
-    "pages/detailinfo/detailinfo"
+    "pages/detailinfo/detailinfo",
+    "pages/chat/chat"
   ],
   "window":{
     "backgroundTextStyle":"light",
