@@ -1,12 +1,11 @@
-// pages/activity/activity.js
+// pages/registration/registration.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    flag: false,
-    info:{}
+    id:0
   },
 
   /**
@@ -15,43 +14,8 @@ Page({
   onLoad(options) {
     var that=this;
     var info= JSON.parse(options.info);
-    console.log(info.detail);
     that.setData({
-      info:info
-    })
-  },
-
-  /**
-   * 改变收藏图标
-   */
-  changeCollect:function(){
-    this.setData({
-      flag: !this.data.flag
-    })
-    if (this.data.flag) {
-      wx.showToast({
-        title: '已收藏',
-        icon: 'none',
-        duration: 2000
-      })
-    } else {
-      wx.showToast({
-        title: '已取消收藏',
-        icon: 'none',
-        duration: 2000
-      })
-    }
-  },
-
-  /**
-   * 转到活动报名
-   */
-  gotoRegistration:function(e){
-    var that=this;
-    const data= that.data.info.id;
-    const target = JSON.stringify(data);
-    wx.navigateTo({
-      url: '../registration/registration?info=' + target
+      id:info
     })
   },
 
@@ -80,7 +44,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-    
+
   },
 
   /**

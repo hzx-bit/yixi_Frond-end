@@ -5,14 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    flag: false,
+    info:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    var that=this;
+    var info= JSON.parse(options.info);
+    console.log(info.detail);
+    that.setData({
+      info:info
+    })
+    console.log(this.data.info);
+  },
+  changeCollect: function () {
+    this.setData({
+      flag: !this.data.flag
+    })
+    if (this.data.flag) {
+      wx.showToast({
+        title: '已收藏',
+        icon: 'none',
+        duration: 2000
+      })
+    } else {
+      wx.showToast({
+        title: '已取消收藏',
+        icon: 'none',
+        duration: 2000
+      })
+    }
   },
 
   /**
@@ -40,7 +65,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
+    
   },
 
   /**

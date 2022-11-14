@@ -1,6 +1,6 @@
 <!--pages/home/home.wxml-->
 <view class="infomation">
-<image class="headicon" src="/images/3.jpeg" mode="heightFix"></image>
+<image class="headicon" src="https://img-blog.csdnimg.cn/fe39d7b57f244bf4af80f550743b5e2f.jpeg" mode="heightFix"></image>
 <text>子非鱼</text>
 </view>
 <view class="line"></view>
