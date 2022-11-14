@@ -1,2 +1,89 @@
 <!--pages/index/index.wxml-->
+<view class="flex nav">
+  <view class="nav-item  {{index==current?'text-selected current':''}}" wx:for="{{tabs}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+    {{item}}
+  </view>
+</view>
 
+
+<view class="newsAndActivity" wx:if="{{current==0}}">
+<!-- 新闻头部 -->
+<view class="title">
+  <text style="color: aliceblue;">新闻</text>
+</view>
+
+<!-- 首页新闻轮播图 -->
+<!-- 新闻轮播图后端实现 -->
+<!-- <view>
+<swiper autoplay indicator-dots="true" indicator-color="black" indicator-active-color="red" circular="true" interval="5000">
+  <navigator url="../news/news">
+    <swiper-item wx:for="{{newsSwiper}}" wx:key="{{index}}" autoplay>
+      <image mode="widthFix" src="{{item.imgSrc}}"></image>
+      <view class="img_info"><text>{{item.title}}</text></view>
+    </swiper-item>
+  </navigator>
+</swiper>
+</view> -->
+
+<!-- 新闻轮播图静态测试 -->
+<view>
+    <swiper class="swiper-container" autoplay indicator-dots="true" indicator-color="black" indicator-active-color="red" circular="true" interval="5000">
+        <navigator url="../news/news">
+            <swiper-item>
+                <image src="../../images/新闻测试1.png" mode="widthFix"></image>
+                <view class="img_info"><text>疫情当下，校领导走访宿舍关心学生生活。</text></view>
+            </swiper-item>
+            <swiper-item>
+                <image src="../../images/新闻测试2.png" mode="widthFix"></image>
+                <view class="img_info"><text>福州大学举行学习贯彻党的二十大精神宣讲团聘任仪式暨集体备课会</text></view>
+            </swiper-item>
+        </navigator>
+    </swiper>
+</view>
+
+<navigator url="../news/news">
+    <button class="newsActivityButton">更多新闻</button>
+</navigator>
+</view>
+
+
+<!--pages/activityindex/activityindex.wxml-->
+<!-- 活动 -->
+<view class="newsAndActivity" wx:if="{{current==1}}">
+<view class="title">
+  <text>活动</text>
+</view>
+
+<!-- 活动静态测试 -->
+<view>
+    <swiper class="swiper-container" autoplay indicator-dots="true" indicator-color="black" indicator-active-color="red" circular="true" interval="5000">
+        <block>
+        <navigator url="../activity/activity">
+            <swiper-item>
+                <view><image src="../../images/新闻测试1.png" mode="widthFix"></image></view>
+                <view class="img_info"><text>疫情当下，校领导走访宿舍关心学生生活。</text></view>
+            </swiper-item>
+            <swiper-item>
+                <view><image src="../../images/新闻测试2.png" mode="widthFix"></image></view>
+                <view class="img_info"><text>福州大学举行学习贯彻党的二十大精神宣讲团聘任仪式暨集体备课会</text></view>
+            </swiper-item>
+        </navigator>
+        </block>
+    </swiper>
+</view>
+<!-- 活动轮播图后端实现 -->
+<!-- <view>
+<swiper autoplay indicator-dots="true" indicator-color="black" indicator-active-color="red" circular="true" interval="5000">
+  <navigator url="../activity/activity">
+    <swiper-item wx:for="{{activitySwiper}}" wx:key="{{index}}" autoplay>
+      <image mode="widthFix" src="{{item.imgSrc}}"></image>
+      <view class="img_info"><text>{{item.title}}</text></view>
+    </swiper-item>
+  </navigator>
+</swiper>
+</view> -->
+
+<navigator url="../activity/activity">
+    <button class="newsActivityButton">更多活动</button>
+</navigator>
+</view>
