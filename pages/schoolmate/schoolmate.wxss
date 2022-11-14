@@ -11,3 +11,69 @@
 #tipinfo {
   margin-top: 30rpx;
 }
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90rpx;
+  background-color: #16d6f8;
+}
+.search .search_in {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding:0 20rpx ;
+  box-sizing: border-box;
+  height: 70rpx;
+  width: 710rpx;
+  background-color: #f5ebeb;
+  border-radius: 35rpx;
+}
+.search_in image {
+  height: 45rpx;
+  width: 45rpx;
+}
+.search input {
+  width: 480rpx;
+}
+.search_in .search_btn {
+  height: 55rpx;
+  width: 110rpx;
+  border-radius: 55rpx;
+  background-color: #6cd3ff;
+  color: #ffffff;
+  text-align: center;
+  line-height: 55rpx;
+  cursor: pointer;
+}
+/* 查询结果*/
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200rpx;
+  margin: 5rpx 20rpx;
+  border: rgb(175, 19, 19) 1rpx solid;
+  border-radius: 8rpx;
+  text-align: center;
+}
+.item image{
+  height: 140rpx;
+  margin-left: 40rpx;
+}
+/*班级聊天群*/
+.item2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200rpx;
+  margin: 5rpx 20rpx;
+  border: rgb(250, 240, 240) 1rpx solid;
+  border-radius: 8rpx;
+  text-align: center;
+  transform: translateY(198%);
+}
+.item2 image{
+  height: 80rpx;
+  margin-left: 40rpx;
+}
