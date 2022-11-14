@@ -9,7 +9,7 @@
     "pages/homepage/homepage",
     "pages/activity/activity",
     "pages/news/news",
-    "pages/logs/logs"
+    "pages/logs/logs",
     "pages/detailinfo/detailinfo"
   ],
   "window":{

@@ -11,7 +11,8 @@ Page({
     activtySwiper:[],
     //d导航栏
     tabs: ["新闻","活动"],
-    current:0
+    current:0,
+    imgURL:'https://www.fzu.edu.cn/__local/D/49/14/9D306D17EA96DBBA63DA32513A8_E7389153_7EE7C3.jpg'
   },
 
   /**

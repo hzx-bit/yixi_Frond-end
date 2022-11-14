@@ -30,11 +30,11 @@
     <swiper class="swiper-container" autoplay indicator-dots="true" indicator-color="black" indicator-active-color="red" circular="true" interval="5000">
         <navigator url="../news/news">
             <swiper-item>
-                <image src="../../images/新闻测试1.png" mode="widthFix"></image>
+                <image src="{{imgURL}}" mode="widthFix"></image>
                 <view class="img_info"><text>疫情当下，校领导走访宿舍关心学生生活。</text></view>
             </swiper-item>
             <swiper-item>
-                <image src="../../images/新闻测试2.png" mode="widthFix"></image>
+                <image src="{{imgURL}}" mode="widthFix"></image>
                 <view class="img_info"><text>福州大学举行学习贯彻党的二十大精神宣讲团聘任仪式暨集体备课会</text></view>
             </swiper-item>
         </navigator>
@@ -60,11 +60,11 @@
         <block>
         <navigator url="../activity/activity">
             <swiper-item>
-                <view><image src="../../images/新闻测试1.png" mode="widthFix"></image></view>
+                <view><image src="{{imgURL}}" mode="widthFix"></image></view>
                 <view class="img_info"><text>疫情当下，校领导走访宿舍关心学生生活。</text></view>
             </swiper-item>
             <swiper-item>
-                <view><image src="../../images/新闻测试2.png" mode="widthFix"></image></view>
+                <view><image src="{{imgURL}}" mode="widthFix"></image></view>
                 <view class="img_info"><text>福州大学举行学习贯彻党的二十大精神宣讲团聘任仪式暨集体备课会</text></view>
             </swiper-item>
         </navigator>
