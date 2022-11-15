@@ -29,7 +29,7 @@
   background-color: #f5ebeb;
   border-radius: 35rpx;
 }
-.search_in image {
+.search_in .search_icon {
   height: 45rpx;
   width: 45rpx;
 }
@@ -67,6 +67,6 @@
   margin-left: 20rpx;
   font-size: 28rpx;
 }
-.item .avatarAndName image {
+.item .avatarAndName .avatar {
   width: 130rpx;
 }

@@ -10,7 +10,7 @@
   <view class="top">
     <view class="search">
       <view class="search_in">
-        <image src="/icon/search.png"></image>
+        <image src="/icon/search.png" class="search_icon"></image>
         <input type="text" placeholder="搜索：姓名、年级、班级"/>
         <view class="search_btn">搜索</view>
       </view>
@@ -21,7 +21,7 @@
 
 <view class="item" wx:for="{{schoolmatesList}}" wx:key="index">
 <view class="avatarAndName">
-<image src="{{item.avatarURL}}" mode="widthFix">
+<image src="{{item.avatarURL}}" mode="widthFix" class="avatar">
 </image>
 <text>{{item.name}}</text>
 </view>

@@ -102,7 +102,7 @@
 
 <!-- 活动列表 -->
 <view class="conatiner">
-  <view class="news-item" wx:for="{{activityList}}" wx:for-index="index">
+  <view class="news-item" wx:for="{{activityList}}" wx:key="index">
     <view class="title" bindtap="toActivityDetail" data-options="{{item.id}}" >{{item.title}}</view>
     <view class="author-info">
       <text class="author-name">作者：{{item.author}} </text>

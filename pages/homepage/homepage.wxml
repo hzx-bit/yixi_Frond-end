@@ -17,7 +17,7 @@
 <text>常见问题</text>
 <image src="/icon/next.png" mode="heightFix" class="next"></image>
 </view>
-<view class="item">
+<view class="item" bindtap="naviToAboutus">
 <image src="/icon/aboutus.png" mode="heightFix"></image>
 <text>关于我们</text>
 <image src="/icon/next.png" mode="heightFix" class="next"></image>

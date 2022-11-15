@@ -1,0 +1,19 @@
+/* pages/aboutus/aboutus.wxss */
+.container {
+  box-sizing: border-box;
+  width:600rpx;
+  height: 1200rpx;
+  padding: -20rpx 20rpx;
+  background-color: lightcoral;
+  margin: 20px auto;
+  text-indent: 2em;
+  font-size: larger;
+  line-height: 200%;
+  color: whitesmoke;
+  border-radius: 36rpx;
+}
+.yeyy {
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 400rpx;
+}
