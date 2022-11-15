@@ -13,37 +13,15 @@
 </view>
 
 <!-- 首页新闻轮播图 -->
-<!-- 新闻轮播图后端实现 -->
-<!-- <view>
+<view>
 <swiper autoplay indicator-dots="true" indicator-color="black" indicator-active-color="red" circular="true" interval="5000">
-  <navigator url="../news/news">
-    <swiper-item wx:for="{{newsSwiper}}" wx:key="{{index}}" autoplay>
-      <image mode="widthFix" src="{{item.imgSrc}}"></image>
+    <swiper-item wx:for="{{newsSwiper}}" wx:key="index" autoplay>
+      <image mode="widthFix" src="{{item.imgSrc}}"  bindtap="toNewsDetail" data-options="{{item.id}}"></image>
       <view class="img_info"><text>{{item.title}}</text></view>
     </swiper-item>
-  </navigator>
 </swiper>
-</view> -->
-
-<!-- 新闻轮播图静态测试 -->
-<view>
-    <swiper class="swiper-container" autoplay indicator-dots="true" indicator-color="black" indicator-active-color="red" circular="true" interval="5000">
-        <!-- <navigator url="../news/news"> -->
-            <swiper-item>
-                <image src="https://img-blog.csdnimg.cn/f6d4641911614338a1738e803e8e7eb7.png" mode="widthFix"></image>
-                <view class="img_info"><text>疫情当下，校领导走访宿舍关心学生生活。</text></view>
-            </swiper-item>
-            <swiper-item>
-                <image src="https://img-blog.csdnimg.cn/694a29cfe8264c1d8578ddd6c08caa51.png" mode="widthFix"></image>
-                <view class="img_info"><text>福州大学举行学习贯彻党的二十大精神宣讲团聘任仪式暨集体备课会</text></view>
-            </swiper-item>
-        <!-- </navigator> -->
-    </swiper>
 </view>
 
-<!-- <navigator url="../news/news">
-    <button class="newsActivityButton">更多新闻</button>
-</navigator> -->
 
 <!-- 新闻列表 -->
 <view class="conatiner">
@@ -68,10 +46,10 @@
 </view>
 
 <!-- 活动静态测试 -->
-<view>
+<!-- 活动轮播图 -->
+<!-- <view>
     <swiper class="swiper-container" autoplay indicator-dots="true" indicator-color="black" indicator-active-color="red" circular="true" interval="5000">
         <block>
-        <!-- <navigator url="../activity/activity"> -->
             <swiper-item>
                 <view><image src="https://img-blog.csdnimg.cn/f6d4641911614338a1738e803e8e7eb7.png" mode="widthFix"></image></view>
                 <view class="img_info"><text>疫情当下，校领导走访宿舍关心学生生活。</text></view>
@@ -80,10 +58,10 @@
                 <view><image src="https://img-blog.csdnimg.cn/694a29cfe8264c1d8578ddd6c08caa51.png" mode="widthFix"></image></view>
                 <view class="img_info"><text>福州大学举行学习贯彻党的二十大精神宣讲团聘任仪式暨集体备课会</text></view>
             </swiper-item>
-        <!-- </navigator> -->
         </block>
     </swiper>
-</view>
+</view> -->
+
 <!-- 活动轮播图后端实现 -->
 <!-- <view>
 <swiper autoplay indicator-dots="true" indicator-color="black" indicator-active-color="red" circular="true" interval="5000">

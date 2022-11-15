@@ -6,14 +6,28 @@ Page({
    */
   data: {
     //新闻轮播图
-    newsSwiper:[],
+    newsSwiper:[
+      {
+        id: 0,
+        imgSrc:'https://img-blog.csdnimg.cn/f6d4641911614338a1738e803e8e7eb7.png',
+        title:'疫情当下，校领导走访宿舍关心学生生活。'
+      },
+      {
+        id: 1,
+        imgSrc:'https://img-blog.csdnimg.cn/694a29cfe8264c1d8578ddd6c08caa51.png',
+        title:'福州大学举行学习贯彻党的二十大精神宣讲团聘任仪式暨集体备课会'
+      }
+    ],
     //活动轮播图
-    activtySwiper:[],
+    activtySwiper:[
+      
+    ],
     //导航栏
     tabs: ["新闻","活动"],
     current:0,
     //所有新闻
-    newsList: [{
+    newsList: [
+    {
       id: 0,
       title: '省教育厅刘健副厅长来校调研疫情防控指导线上教学',
       author: ' ',
@@ -123,7 +137,7 @@ Page({
     const target = JSON.stringify(data);
     wx.navigateTo({
       url: '../news/news?info=' + target
-    })
+    });
   },
 
   /**

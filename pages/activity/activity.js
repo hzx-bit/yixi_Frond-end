@@ -15,7 +15,6 @@ Page({
   onLoad(options) {
     var that=this;
     var info= JSON.parse(options.info);
-    console.log(info.detail);
     that.setData({
       info:info
     })
