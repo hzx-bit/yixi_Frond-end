@@ -6,6 +6,7 @@
   margin: 0 20rpx;
 }
 .avatar {
+  padding: 0;
   width: 160rpx;
   height: 160rpx;
   border-radius: 80rpx;
@@ -13,7 +14,6 @@
 .avatar image {
     height: 100%;
     border-radius: 80rpx;
-    margin-left: -28rpx;
 }
 .infomation .weui-input {
   margin: 60rpx;
