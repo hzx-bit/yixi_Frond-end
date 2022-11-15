@@ -1,2 +1,29 @@
 <!--pages/registration/registration.wxml-->
-<text>活动报名{{id}}</text>
+<view style="text-align: center;">
+  <text>活动报名{{id}}</text>
+</view>
+
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+<view class="signContainer">
+  <view class="infoItem">
+    <text class="item-label">姓名</text>
+    <input name='userName' placeholder="未填写(必填)" value="{{getUserName}}"></input>
+  </view>
+  <view class="infoItem">
+    <text class="item-label">手机</text>
+    <input name='userPhone' placeholder="未填写(必填)" value="{{getUserPhone}}"></input>
+  </view>
+  <view class="infoItem">
+    <text class="item-label">QQ</text>
+    <input name='userQQ' placeholder="未填写(必填)" value="{{getUserQQ}}"></input>
+  </view>
+  <view class="infoItem">
+    <text class="item-label">微信</text>
+    <input name='userWeChat' placeholder="未填写(选填)" value="{{getUserWeChat}}"></input>
+  </view>
+</view>
+</form>
+
+<button formType="submit">提交报名</button>

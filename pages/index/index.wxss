@@ -12,6 +12,18 @@ page {
   width: 100%;
 }
 
+/* 轮播图文字 */
+.img_info{
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  color: #fff;
+  font-size: 30rpx;
+}
+
 /* 设置为水平布局，文字居中显示 */
 .flex {
   display: flex;
@@ -44,6 +56,7 @@ page {
 }
 
 .news-item {
+  padding-top: 1ch;
   margin: 30rpx;
 }
 .title {
@@ -58,4 +71,9 @@ page {
   text-align: right;
   color: #707070;
   font-size: small;
+}
+
+.newsAndActivity{
+  display: flex;
+  flex-direction: column;
 }
