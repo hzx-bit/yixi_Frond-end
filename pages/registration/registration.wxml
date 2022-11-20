@@ -23,7 +23,7 @@
     <text class="item-label">微信</text>
     <input name='userWeChat' placeholder="未填写(选填)" value="{{getUserWeChat}}"></input>
   </view>
+  <button formType="submit">提交报名</button>
 </view>
 </form>
 
-<button formType="submit">提交报名</button>
