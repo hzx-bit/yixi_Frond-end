@@ -1,6 +1,7 @@
 // pages/detailinfo/detailinfo.js
 const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0';
 import Toast from '@vant/weapp/toast/toast';
+var app =getApp();
 Page({
     
   /**
@@ -68,6 +69,9 @@ Page({
     this.setData({
       term:this.data.termcl[e.detail.value]
     })
+  },
+  submit:function(e) {
+    
   },
   onChooseAvatar(e) {
     const { avatarUrl } = e.detail 

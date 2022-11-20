@@ -1,11 +1,11 @@
 // pages/list/list.js
+var app = getApp();
 Page({
-  
   /**
    * 页面的初始数据
    */
   data: {
-    status: false,
+    userid: null,
     schoolmatesList:[
       {
         index: 0,
@@ -39,7 +39,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    if(app.globalData.userid)
+    {
+      this.setData({
+        userid:app.globalData.userid
+      })
+    }
   },
 
   /**

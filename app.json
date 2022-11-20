@@ -10,7 +10,6 @@
     "pages/activity/activity",
     "pages/news/news",
     "pages/registration/registration",
-    "pages/logs/logs",
     "pages/detailinfo/detailinfo",
     "pages/aboutus/aboutus"
   ],

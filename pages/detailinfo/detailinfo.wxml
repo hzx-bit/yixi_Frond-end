@@ -104,7 +104,7 @@
     </view>
 </view>
 <view>
-<button class="submit" style="background-color: dodgerblue;" size="mini" type="primary"  form-type="submit">
-<text style="line-height: 80rpx;font-size: 28rpx;">确认</text>
+<button class="submit" style="background-color: dodgerblue;" size="mini" type="primary"  form-type="submit" bindtap="submit">
+<text style="line-height: 80rpx;font-size: 28rpx;" >确认</text>
 </button>
 </view>
