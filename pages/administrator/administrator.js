@@ -5,19 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    pickerHidden: true,
+    chosen: ''
   },
-  submitImg(){
-    wx.chooseMedia({
-      count: 3,
-      mediaType: ['image'],
-      sourceType: ['album', 'camera'],
-      maxDuration: 30,
-      camera: 'back',
-      success(res) {
-        console.log(res.tempFiles.tempFilePath)
-        console.log(res.tempFiles.size)
-      }
+
+  pickerConfirm(e) {
+    this.setData({
+      pickerHidden: true
+    })
+    this.setData({
+      chosen: e.detail.value
+    })
+  },
+
+  pickerCancel() {
+    this.setData({
+      pickerHidden: true
+    })
+  },
+
+  pickerShow() {
+    this.setData({
+      pickerHidden: false
+    })
+  },
+  formSubmit(e) {
+    console.log('数据为：', e.detail.value)
+  },
+
+  formReset(e) {
+    console.log('数据为：', e.detail.value)
+    this.setData({
+      chosen: ''
     })
   },
   /**

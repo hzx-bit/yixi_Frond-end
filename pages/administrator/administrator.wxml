@@ -1,2 +1,25 @@
 <!--pages/administrator/administrator.wxml-->
-<button size="mini" bindtap="submitImg">提交图片</button>
+<form catchsubmit="formSubmit" catchreset="formReset">
+    <view class="title">提交类型：</view>
+        <radio-group name="type" class="chooseType">
+          <label><radio value="new"/>新闻</label>
+          <label><radio value="activity"/>活动</label>
+        </radio-group>
+    <view class="title">标题：</view>
+        <view class="inputTitle" style="margin: 30rpx 80rpx" >
+          <input name="title" placeholder="请输入标题" />
+        </view> 
+    <view class="title">作者与日期：</view>
+    <view class="authorAnddate">
+      <input name="auther" placeholder="请输入作者" />
+      <picker mode="date" name="date">请选择日期</picker>
+    </view> 
+    <view class="title">内容：</view>
+    <textarea name="content" auto-height="true" 	maxlength="-1" style="margin: 30rpx auto;"></textarea>
+
+
+  <view class="btn-area">
+    <button style="margin: 30rpx 100rpx" type="primary" formType="submit">提交</button>
+    <button style="margin: 30rpx 100rpx" formType="reset">清除</button>
+  </view>
+</form>
