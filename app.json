@@ -11,7 +11,8 @@
     "pages/news/news",
     "pages/registration/registration",
     "pages/detailinfo/detailinfo",
-    "pages/aboutus/aboutus"
+    "pages/aboutus/aboutus",
+    "pages/FAQ/FAQ"
   ],
   "window":{
     "backgroundTextStyle":"light",
