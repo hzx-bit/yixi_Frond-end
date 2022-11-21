@@ -1,0 +1,41 @@
+<view class="detail">
+  <view decode="true" class="ques">
+    Q:我不是福大校友，可以使用这个小程序吗？
+  </view>
+  <view decode="true" class="ans">
+    A：可以的，您可以使用这个小程序查看福大的各种资讯，参加福大一些面向全社会的活动，浏览福大的各种景点并且和这些景点进行虚拟合影喔。
+  </view>
+</view>
+
+<text>\n</text>
+
+<view class="detail">
+  <view decode="true" class="ques">
+    Q:我不是福大校友，可以通过这个小程序认识福大优秀的校友们吗？
+  </view>
+  <view decode="true" class="ans">
+    A：很遗憾，为了保护校友们的隐私，我们只允许经过校友认证后的用户查看其他校友的信息，但您可以通过这个小程序了解福大的其他方面。
+  </view>
+</view>
+
+<text>\n</text>
+
+<view class="detail">
+  <view decode="true" class="ques">
+    Q:我是福大校友，怎么进行校友认证？
+  </view>
+  <view decode="true" class="ans">
+    A：您可以在个人中心进入校友认证界面，填写完必填的信息后，我们会进行审核比对，通过审核后就完成校友认证啦。非必填的信息也建议您进行填写，可以方便其他校友找到您喔。
+  </view>
+</view>
+
+<text>\n</text>
+
+<view class="detail">
+  <view decode="true" class="ques">
+    Q:小程序名“忆昔”有什么含义吗？
+  </view>
+  <view decode="true" class="ans">
+    A：小程序名字取自“携来百侣曾游，忆往昔峥嵘岁月稠”。我们希望“忆昔”可以帮助您更好地参加活动、参观校园，让您更深切地感受到福大校园这些年来的变化，同时让您与失联的校友们重新取得联系。
+  </view>
+</view>

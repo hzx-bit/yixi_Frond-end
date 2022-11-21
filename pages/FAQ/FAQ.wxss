@@ -1,0 +1,28 @@
+.paragraph {
+  box-sizing: border-box;
+  width: 600rpx;
+  height: 300rpx;
+  /* padding: -20rpx 20rpx; */
+  background-color: rgb(255, 123, 0);
+  margin: 20px auto;
+  /* text-indent: 2em; */
+  font-size: larger;
+  color: white;
+  border-radius: 36rpx;
+}
+.detail {
+  margin:16rpx;
+  line-height: 44rpx;
+  letter-spacing: 2px;
+  font-size: 32rpx;
+  text-align: justify;
+  line-height:2;
+  text-indent:2em;
+}
+.ans {
+  color: black;
+}
+.ques {
+  color: red;
+}
+
