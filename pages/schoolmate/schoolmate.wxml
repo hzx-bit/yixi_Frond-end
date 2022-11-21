@@ -1,12 +1,13 @@
 <!--pages/list/list.wxml-->
-<view class="container" wx:if="{{status}}">
+<view class="container" wx:if="{{!userid}}">
 <icon type="info" size="60px" color="#9" id="tip"></icon>
   <view id="tipinfo">
     <text>校友认证后开启功能</text>
   </view>
 </view>
 <!--搜索-->
-<view>
+<view wx:else>
+  <view>
   <view class="top">
     <view class="search">
       <view class="search_in">
@@ -26,6 +27,7 @@
 <text>{{item.name}}</text>
 </view>
 <text> {{item.info}}</text>
+</view>
 </view>
 
 
