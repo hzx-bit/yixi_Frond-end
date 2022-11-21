@@ -12,7 +12,8 @@
     "pages/registration/registration",
     "pages/detailinfo/detailinfo",
     "pages/aboutus/aboutus",
-    "pages/administrator/administrator"
+    "pages/administrator/administrator",
+    "pages/FAQ/FAQ"
   ],
   "window":{
     "backgroundTextStyle":"light",

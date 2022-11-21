@@ -17,5 +17,5 @@
   <view style="border-bottom:1rpx solid #707070;width:100%"></view>
   <view wx:for="{{info.detail}}" wx:key="index">
     <view decode=true" class="detail" user-select="true">{{item}}</view>
-</view>
+  </view>
 </view>

@@ -12,7 +12,7 @@
 <text>校友认证</text>
 <image src="/icon/next.png" mode="heightFix" class="next"></image>
 </view>
-<view class="item">
+<view class="item" bindtap="naviToFAQ">
 <image src="/icon/FAquestions.png" mode="heightFix"></image>
 <text>常见问题</text>
 <image src="/icon/next.png" mode="heightFix" class="next"></image>
