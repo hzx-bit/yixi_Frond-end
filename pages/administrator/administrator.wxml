@@ -1,0 +1,2 @@
+<!--pages/administrator/administrator.wxml-->
+<button size="mini" bindtap="submitImg">提交图片</button>
