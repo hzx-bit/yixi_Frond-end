@@ -9,8 +9,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "admin",
-          "pathName": "pages/administrator/administrator",
+          "name": "map",
+          "pathName": "pages/map/map",
           "query": "",
           "launchMode": "default",
           "scene": null

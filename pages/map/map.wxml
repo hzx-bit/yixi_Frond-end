@@ -1,2 +1,9 @@
-<!--pages/map/map.wxml-->
-
+<view class="maparea">
+  <image src="{{cloudURL}}{{type}}.png"  mode="widthFix" class="mapimg"></image>
+  <image src="../../icon/loc.png" class="loc" wx:for="{{location}}" wx:key="index" bindtap="showinfo" data-id="{{index}}" style="top: {{item.top}}; left:{{item.left}}"></image>
+  <view class="info" wx:if="{{index}}">
+  </view>
+</view>
+<picker bindchange="mapchange" value="{{type}}" range="{{campus}}" class="picker">
+        <text>{{type}}</text>
+</picker>
