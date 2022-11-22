@@ -9,7 +9,7 @@ Page({
     newsSwiper:[
       {
         id: 0,
-        imgSrc:'https://img-blog.csdnimg.cn/f6d4641911614338a1738e803e8e7eb7.png',
+        imgSrc:'cloud://cloud1-3gjatjl2f1e06dd4.636c-cloud1-3gjatjl2f1e06dd4-1315043544/轮播图/0.jpg',
         title:'疫情当下，校领导走访宿舍关心学生生活。'
       },
       {
@@ -169,31 +169,13 @@ Page({
    */
   getNewsSwiperList(){
     let that = this;
-    wx.request({
-      url: 'url',
-      success(res){
-        if(res.data.code===0){
-          that.setData({
-            newsSwiper:res.data.newsSwiperList
-          })
-        }
-      }
-    })
-  },
-
-  /**
-   * 获取活动轮播图
-   */
-  getActivitySwiperList(){
-    let that = this;
-    wx.request({
-      url: 'url',
-      success(res){
-        if(res.data.code===0){
-          that.setData({
-            activitySwiper:res.data.activitySwiperList
-          })
-        }
+    wx.cloud.callFunction({
+      name:'getSwiper',
+      success: function(res){
+        console.log(res.result.data);
+        that.setData({
+          newsSwiper:res.result.data
+        })
       }
     })
   },
@@ -204,13 +186,12 @@ Page({
   getNews(){
     let that = this;
     wx.request({
-      url: 'url',
+      url: 'getNews',
       success(res){
-        if(res.data.code===0){
-          that.setData({
-            newsList:res.data.newsList
-          })
-        }
+        console.log(res.result.data)
+        // that.setData({
+        //   newsList:res.data.newsList
+        // })
       }
     })
   },
@@ -220,14 +201,13 @@ Page({
    */
   getActivity(){
     let that = this;
-    wx.request({
-      url: 'url',
+    wx.cloud.callFunction({
+      name: 'getActivity',
       success(res){
-        if(res.data.code===0){
+        console.log(res.result.data);
           that.setData({
             activityList:res.data.activityList
           })
-        }
       }
     })
   },
@@ -236,10 +216,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    // this.getNewsSwiperList();
+    this.getNewsSwiperList();
     // this.getNews();
-    // this.getActivitySwiperList();
-    // this.getActivity();
+    this.getActivity();
   },
 
   /**
