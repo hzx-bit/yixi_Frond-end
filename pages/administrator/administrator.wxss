@@ -1,0 +1,14 @@
+/* pages/administrator/administrator.wxss */
+.title {
+  text-align: center;
+  font-size: large;
+}
+.chooseType {
+  display: flex;
+  justify-content: space-evenly;
+}
+.authorAnddate {
+  display: flex;
+  justify-content: space-around;
+  margin: 30rpx 30rpx;
+}

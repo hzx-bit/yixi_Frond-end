@@ -9,8 +9,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "aboutus",
-          "pathName": "pages/aboutus/aboutus",
+          "name": "map",
+          "pathName": "pages/map/map",
           "query": "",
           "launchMode": "default",
           "scene": null

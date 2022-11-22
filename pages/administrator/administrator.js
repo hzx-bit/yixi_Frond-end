@@ -1,25 +1,43 @@
-// pages/map/map.js
+// pages/administrator/administrator.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    campus:["旗山","铜盘","集美","怡山","晋江","泉港"],
-    cloudURL:"cloud://cloud1-3gjatjl2f1e06dd4.636c-cloud1-3gjatjl2f1e06dd4-1315043544/map图片/",
-    type:"旗山",
-    location:[{top:"130rpx",left:"445rpx"},{top:"190rpx",left:"200rpx"}],
-    index:0
+    pickerHidden: true,
+    chosen: ''
   },
-  mapchange(e){
-    var ct=this.data.campus[e.detail.value];
+
+  pickerConfirm(e) {
     this.setData({
-      type:ct
+      pickerHidden: true
+    })
+    this.setData({
+      chosen: e.detail.value
     })
   },
-  showinfo(e){
-    console.log(e.currentTarget.dataset.id);
 
+  pickerCancel() {
+    this.setData({
+      pickerHidden: true
+    })
+  },
+
+  pickerShow() {
+    this.setData({
+      pickerHidden: false
+    })
+  },
+  formSubmit(e) {
+    console.log('数据为：', e.detail.value)
+  },
+
+  formReset(e) {
+    console.log('数据为：', e.detail.value)
+    this.setData({
+      chosen: ''
+    })
   },
   /**
    * 生命周期函数--监听页面加载
