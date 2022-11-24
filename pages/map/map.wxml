@@ -4,8 +4,11 @@
   <image src="../../icon/loc.png" class="icon"></image>
   <text>{{item.title}}</text>
   </view>
-  <view class="info" wx:if="{{title}}">
-  </view>
+<scroll-view class="info" wx:if="{{title}}" decode="true" scroll-y="true" user-select="true">
+<image src="{{imgURL}}" class="detailImg" mode="widthFix"></image>
+<view wx:for="{{paragraph}}" wx:key="index" class="detail">{{item}}
+</view>
+</scroll-view>
 </view>
 <picker bindchange="mapchange" value="{{type}}" range="{{campus}}" class="picker">
         <text>{{type}}</text>
