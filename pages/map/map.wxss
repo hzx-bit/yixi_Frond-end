@@ -6,10 +6,19 @@
 .mapimg {
   width: 750rpx;
 }
-.loc {
-  position: absolute;
+.icon {
+  display: block;
   width: 32rpx;
   height: 32rpx;
+  margin: 0 auto;
+}
+.loc {
+  width: 100rpx;
+  text-align: center;
+  font-size: 14rpx;
+  font-weight: 700;
+  color: lightyellow;
+  position: absolute;
   z-index: 3;
 }
 .info {
@@ -19,14 +28,14 @@
   width: 250rpx;
   height: 100%;
   opacity: 0.4;
-  background-color:lightgoldenrodyellow;
+  background-color:lightcoral;
   z-index: 2;
 }
 .picker {
   position: absolute;
   right: 0;
   top: 0;
-  width: 50rpx;
+  width: 80rpx;
   text-align: center;
   background-color: lightgrey;
   border-radius: 6rpx;

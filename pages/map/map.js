@@ -5,21 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-    campus:["旗山","铜盘","集美","怡山","晋江","泉港"],
+    campus:["旗山校区","铜盘校区","集美校区","怡山校区","晋江校区","泉港校区"],
     cloudURL:"cloud://cloud1-3gjatjl2f1e06dd4.636c-cloud1-3gjatjl2f1e06dd4-1315043544/map图片/",
-    type:"旗山",
-    location:[{top:"130rpx",left:"445rpx"},{top:"190rpx",left:"200rpx"}],
-    index:0
+    type:"怡山校区",
+    location:[{top:"110rpx",left:"140rpx",title:"至诚楼"},{top:"160rpx",left:"120rpx",title:"福建省中心检验所"},{top:"190rpx",left:"380rpx",title:"计算机工程系院楼"}],
+    title:null
   },
   mapchange(e){
     var ct=this.data.campus[e.detail.value];
     this.setData({
-      type:ct
+      type:ct,
+      title:null
     })
   },
   showinfo(e){
-    console.log(e.currentTarget.dataset.id);
-
+    if(!this.data.title||this.data.title!=e.currentTarget.dataset.title)
+    {
+      this.setData({
+        title:e.currentTarget.dataset.title
+      });
+      console.log(this.data.title)
+    }
+    else{
+      this.setData({
+        title:null
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载
