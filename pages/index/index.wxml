@@ -16,7 +16,7 @@
 <view>
 <swiper autoplay indicator-dots="true" indicator-color="black" indicator-active-color="red" circular="true" interval="5000">
     <swiper-item wx:for="{{newsSwiper}}" wx:key="index" autoplay>
-      <image mode="widthFix" src="{{item.imgSrc}}"  bindtap="toNewsDetail" data-options="{{item.id}}"></image>
+      <image mode="aspectFill" src="{{item.imgSrc}}"  bindtap="toNewsDetail" data-options="{{item.id}}" class="img"></image>
       <view class="img_info"><text>{{item.title}}</text></view>
     </swiper-item>
 </swiper>

@@ -12,6 +12,13 @@ page {
   width: 100%;
 }
 
+.img{
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
 /* 轮播图文字 */
 .img_info{
   position: absolute;
