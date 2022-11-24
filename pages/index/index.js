@@ -56,8 +56,8 @@ Page({
       title: '【中国网】团立项主题活动 | 筑梦二十大，青春新征程',
       author: '中国网',
       publishDate: '2022-11-10',
-      image: '',
-      detail: []
+      image: 'cloud://cloud1-3gjatjl2f1e06dd4.636c-cloud1-3gjatjl2f1e06dd4-1315043544/activity图片/7.1.jpg',
+      detail: [""]
     },
     {
       id: 4,
@@ -135,6 +135,7 @@ Page({
     var that=this;
     const data= that.data.newsList[e.target.dataset.options];
     const target = JSON.stringify(data);
+    console.log(target);
     wx.navigateTo({
       url: '../news/news?info=' + target
     });
@@ -172,7 +173,7 @@ Page({
     wx.cloud.callFunction({
       name:'getSwiper',
       success: function(res){
-        console.log(res.result.data);
+        // console.log(res.result.data);
         that.setData({
           newsSwiper:res.result.data
         })
@@ -184,14 +185,16 @@ Page({
    * 获取新闻内容
    */
   getNews(){
+    console.log("into local getnews");
     let that = this;
-    wx.request({
-      url: 'getNews',
-      success(res){
-        console.log(res.result.data)
-        // that.setData({
-        //   newsList:res.data.newsList
-        // })
+    wx.cloud.callFunction({
+      name:'getNewsList',
+      success: function(res){
+        console.log("into cloud getnews")
+        console.log(res.result.data);
+        that.setData({
+          newsList:res.result.data
+        })
       }
     })
   },
@@ -202,11 +205,11 @@ Page({
   getActivity(){
     let that = this;
     wx.cloud.callFunction({
-      name: 'getActivity',
+      name: 'getActivityList',
       success(res){
-        console.log(res.result.data);
+        // console.log(res.result.data);
           that.setData({
-            activityList:res.data.activityList
+            activityList:res.result.data
           })
       }
     })
@@ -217,7 +220,7 @@ Page({
    */
   onLoad(options) {
     this.getNewsSwiperList();
-    // this.getNews();
+    this.getNews();
     this.getActivity();
   },
 
