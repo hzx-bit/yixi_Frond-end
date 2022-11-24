@@ -9,7 +9,7 @@ Page({
     newsSwiper:[
       {
         id: 0,
-        imgSrc:'https://img-blog.csdnimg.cn/f6d4641911614338a1738e803e8e7eb7.png',
+        imgSrc:'cloud://cloud1-3gjatjl2f1e06dd4.636c-cloud1-3gjatjl2f1e06dd4-1315043544/轮播图/0.jpg',
         title:'疫情当下，校领导走访宿舍关心学生生活。'
       },
       {
@@ -56,8 +56,8 @@ Page({
       title: '【中国网】团立项主题活动 | 筑梦二十大，青春新征程',
       author: '中国网',
       publishDate: '2022-11-10',
-      image: '',
-      detail: []
+      image: 'cloud://cloud1-3gjatjl2f1e06dd4.636c-cloud1-3gjatjl2f1e06dd4-1315043544/activity图片/7.1.jpg',
+      detail: [""]
     },
     {
       id: 4,
@@ -135,6 +135,7 @@ Page({
     var that=this;
     const data= that.data.newsList[e.target.dataset.options];
     const target = JSON.stringify(data);
+    console.log(target);
     wx.navigateTo({
       url: '../news/news?info=' + target
     });
@@ -169,31 +170,13 @@ Page({
    */
   getNewsSwiperList(){
     let that = this;
-    wx.request({
-      url: 'url',
-      success(res){
-        if(res.data.code===0){
-          that.setData({
-            newsSwiper:res.data.newsSwiperList
-          })
-        }
-      }
-    })
-  },
-
-  /**
-   * 获取活动轮播图
-   */
-  getActivitySwiperList(){
-    let that = this;
-    wx.request({
-      url: 'url',
-      success(res){
-        if(res.data.code===0){
-          that.setData({
-            activitySwiper:res.data.activitySwiperList
-          })
-        }
+    wx.cloud.callFunction({
+      name:'getSwiper',
+      success: function(res){
+        // console.log(res.result.data);
+        that.setData({
+          newsSwiper:res.result.data
+        })
       }
     })
   },
@@ -202,15 +185,16 @@ Page({
    * 获取新闻内容
    */
   getNews(){
+    console.log("into local getnews");
     let that = this;
-    wx.request({
-      url: 'url',
-      success(res){
-        if(res.data.code===0){
-          that.setData({
-            newsList:res.data.newsList
-          })
-        }
+    wx.cloud.callFunction({
+      name:'getNewsList',
+      success: function(res){
+        console.log("into cloud getnews")
+        console.log(res.result.data);
+        that.setData({
+          newsList:res.result.data
+        })
       }
     })
   },
@@ -220,14 +204,13 @@ Page({
    */
   getActivity(){
     let that = this;
-    wx.request({
-      url: 'url',
+    wx.cloud.callFunction({
+      name: 'getActivityList',
       success(res){
-        if(res.data.code===0){
+        // console.log(res.result.data);
           that.setData({
-            activityList:res.data.activityList
+            activityList:res.result.data
           })
-        }
       }
     })
   },
@@ -236,10 +219,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    // this.getNewsSwiperList();
-    // this.getNews();
-    // this.getActivitySwiperList();
-    // this.getActivity();
+    this.getNewsSwiperList();
+    this.getNews();
+    this.getActivity();
   },
 
   /**

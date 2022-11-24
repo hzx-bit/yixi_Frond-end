@@ -14,6 +14,7 @@ Page({
    */
   onLoad(options) {
     var that=this;
+    console.log(options.info);
     var info= JSON.parse(options.info);
     that.setData({
       info:info
@@ -36,6 +37,7 @@ Page({
         duration: 2000
       })
     }
+    console.log(this.data.info);
   },
 
   /**
