@@ -7,17 +7,16 @@
     <text>编辑头像</text>
   </view>
   <view>
-    <view class="info">
+    <view class="info" style="margin-left: 24rpx;">
       <div style="color: red">*</div>
-      <text style="width: 100rpx;">姓名:</text>
-      <textarea class="input1" placeholder="请输入姓名" type="text"></textarea>
+      <text style="width: 100rpx; margin-right: 12rpx;">姓名:</text>
+      <input class="input1" value="{{name}}" placeholder="请输入姓名" type="text" bindinput="inputName"></input>
     </view>
     <view class="section">
     <picker bindchange="bindPickerChange" value="{{gender}}" range="{{gendercl}}">
       <view class="picker">
         <view class="location1">
-        <text style="color: red;">*</text>
-        性别:
+        <text>性别:</text>
         </view>
         <text class="color6">{{gender}}</text>
       </view>
@@ -50,8 +49,7 @@
     <picker bindchange="bindPickerChange2" value="{{grade}}" range="{{gradecl}}">
       <view class="picker">
         <view class="location2">
-          <text style="color: red;">*</text>
-        年级:
+          <text>年级:</text>
         </view>
         <text class="color6">{{grade}}</text>
       </view>
@@ -61,8 +59,7 @@
     <picker bindchange="bindPickerChange3" value="{{major}}" range="{{majorcl}}">
       <view class="picker">
         <view class="location2">
-          <text style="color: red;">*</text>
-        专业:
+          <text>专业:</text>
         </view>
         <text class="color6">{{major}}</text>
       </view>
@@ -85,26 +82,26 @@
     </picker>
     </view>
 </view>
-<view>
+<view style="margin-left: 18rpx;">
   <view class="info">
-      <text style="width: 120rpx;">手机号</text>
-      <textarea class="input2" placeholder="请输入手机号码" type="text"></textarea>
+      <text style="width: 160rpx;">手机号:</text>
+      <input class="input2" placeholder="请输入手机号码" type="text" bindinput="inputPhone"></input>
     </view>
     <view class="info">
-      <text style="width: 120rpx;">邮箱:</text>
-      <textarea show-confirm-bar= "false" class="input2" placeholder="请输入邮箱信息" type="text"></textarea>
+      <text style="width: 160rpx;">邮箱:</text>
+      <input show-confirm-bar= "false" class="input2" placeholder="请输入邮箱信息" type="text"  bindinput="inputEmail"></input>
     </view>
     <view class="info">
-      <text style="width: 120rpx;">公司:</text>
-      <textarea class="input2" placeholder="请输入公司名称" type="text"></textarea>
+      <text style="width: 160rpx;">公司:</text>
+      <input class="input2" placeholder="请输入公司名称" type="text" bindinput="inputFirm"></input>
     </view>
     <view class="info">
-      <text style="width: 120rpx;">职务:</text>
-      <textarea class="input2" placeholder="请输入职务名称" type="text"></textarea>
+      <text style="width: 160rpx;">职务:</text>
+      <input class="input2" placeholder="请输入职务名称" type="text" bindinput="inputWork"></input>
     </view>
 </view>
 <view>
-<button class="submit" style="background-color: dodgerblue;" size="mini" type="primary"  form-type="submit" bindtap="submit">
-<text style="line-height: 80rpx;font-size: 28rpx;" >确认</text>
+<button class="submit" style="background-color: dodgerblue;" size="mini" type="primary"  form-type="submit" bindtap="submitInfo">
+<text style="line-height: 80rpx;font-size: 28rpx;">确认</text>
 </button>
 </view>

@@ -38,10 +38,13 @@ page{
   flex-direction: row;
 }
 .location1{
-  width: 140rpx;
+  width: 125rpx;
+  text-align: center;
 }
 .location2{
-  width: 240rpx;
+  width: 160rpx;
+  text-align: center;
+  margin-right: 90rpx;
 }
 .font30{
   font-size: 30rpx;
@@ -58,13 +61,12 @@ page{
 .picker{
   padding-left: 20rpx; 
   height: 88rpx;
-  width: 500rpx;
+  width: 550rpx;
   line-height: 88rpx;
   display: flex;
   flex-direction: row;
 }
 .info{
-  padding-left: 20rpx;
   height: 88rpx;
   line-height: 88rpx;
   display: flex; flex-direction: row;
@@ -75,14 +77,12 @@ page{
 }
 .input1{
   height: 88rpx;
-  margin-left: 56rpx;
-  padding-top: 8rpx;
+  margin-left: 60rpx;
   line-height: 88rpx;
 }
 .input2{
   height: 88rpx;
   margin-left: 130rpx;
-  padding-top: 8rpx;
   line-height: 88rpx;
 }
 .submit{

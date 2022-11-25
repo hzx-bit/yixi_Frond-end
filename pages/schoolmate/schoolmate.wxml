@@ -22,11 +22,11 @@
 
 <view class="item" wx:for="{{schoolmatesList}}" wx:key="index">
 <view class="avatarAndName">
-<image src="{{item.avatarURL}}" mode="widthFix" class="avatar">
+<image src="{{item.avatarUrl}}" mode="widthFix" class="avatar">
 </image>
 <text>{{item.name}}</text>
 </view>
-<text> {{item.info}}</text>
+<view class="info" > {{item.info}}</view>
 </view>
 </view>
 

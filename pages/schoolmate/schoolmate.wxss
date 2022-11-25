@@ -49,16 +49,17 @@
 /* 查询结果*/
 .item {
   display: flex;
+  position: relative;
   align-items: center;
-  justify-content: space-between;
   height: 180rpx;
   margin: 20rpx 20rpx;
   border: skyblue 2rpx solid;
   border-radius: 20rpx;
   box-shadow: 2rpx 2rpx gray;
-  text-align: center;
+  
 }
 .item .avatarAndName {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,4 +70,17 @@
 }
 .item .avatarAndName .avatar {
   width: 130rpx;
+}
+.info{
+  display: block;
+  position: absolute;
+  height: 150rpx;
+  width: 460rpx;
+  top: 30rpx;
+  right: 20rpx;
+  line-height: 44rpx;
+  letter-spacing: 2rpx;
+  font-size: 28rpx;
+  text-align: justify;
+  word-break: break-all;
 }

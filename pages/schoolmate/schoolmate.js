@@ -5,27 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userid: "032002410",
-    schoolmatesList:[
-      {
-        index: 0,
-        name:'杨过',
-        avatarURL:'../../icon/homepage.png',
-        info :'2010级| 计算机 |03班 | 杭州 |xxx有限公司|  开发'
-      },
-      {
-        index: 1,
-        name:'小龙女',
-        avatarURL:'../../icon/homepage.png',
-        info :'2012级| 计算机 |03班 | 杭州 |xxx有限公司|  销售'
-      }
-    ]
+    userid: "",
+    flag: true,
+    schoolmatesList:[]
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
   },
 
   /**
@@ -39,11 +26,31 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    if(app.globalData.userid)
+    if(app.globalData.usrid)
     {
       this.setData({
-        userid:app.globalData.userid
+        userid:app.globalData.usrid
       })
+      if(this.data.flag)
+      {
+        var that = this;
+        for(var i =0 ;i<5;i++){
+          wx.cloud.callFunction({
+            name: 'findStudentByUsrId',
+            data:{
+              usrId:i.toString()
+            },
+            success(res){
+              that.setData({
+                schoolmatesList:that.data.schoolmatesList.concat(res.result.data[0])
+              })
+            }
+          })
+        }
+        this.setData({
+          flag:false
+        })
+      }
     }
   },
 

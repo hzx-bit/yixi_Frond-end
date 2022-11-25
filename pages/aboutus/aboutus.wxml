@@ -1,7 +1,7 @@
 <!--pages/aboutus/aboutus.wxml-->
 <view class="container">
 <image src="../../icon/yeyy.png" class="yeyy"></image>
-<text decode="true" user-select="true">
+<text decode="true" user-select="true" class="detail">
 &nbsp;&nbsp;&nbsp;&nbsp;银耳椰椰组是福州大学的一个软件工程小组。
 &nbsp;&nbsp;&nbsp;&nbsp;我们的理念是简约易用，使“忆昔(Memories of The Past)”成为您重临福州大学的最好助手。
 &nbsp;&nbsp;&nbsp;&nbsp;您的流畅使用是我们的荣幸，您的宝贵意见会让我们变得更好。

@@ -1,5 +1,4 @@
 // pages/detailinfo/detailinfo.js
-const defaultAvatarUrl = 'https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0';
 import Toast from '@vant/weapp/toast/toast';
 var app =getApp();
 Page({
@@ -8,13 +7,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    avatarUrl:defaultAvatarUrl,
-    name: '姜凡',
+    avatarUrl:'../../icon/avatar.png',
+    name: '',
     gender:'请选择性别',
     gendercl: ['男', '女'],
     city:'请选择城市',
     citycl:['福州','厦门'],
-    birthday:'1961-01-04',
+    birthday:'请选择出生日期',
     grade:'请选择年级',
     gradecl:['2018级','2017级','2016级','2015级',],
     major:'请选择专业',
@@ -76,7 +75,7 @@ Page({
 
 
 
-  submit:function() {
+  submitInfo:function() {
     wx.cloud.init()
     const db=wx.cloud.database()
 
@@ -200,8 +199,8 @@ async function func(usrId,Name,Birthday,Gender,City,Grade,Major,Class,Term,Phone
       return id;
     }
 }
-func(this.data.usrid,this.data.name,this.data.birthday,this.data.gender,this.data.city,this.data.grade,this.data.major,this.data.class,this.data.term,this.data.phone,this.data.email,this.data.firm,this.data.work,this.data.avatarUrl)
-
+var retid = func(this.data.usrid,this.data.name,this.data.birthday,this.data.gender,this.data.city,this.data.grade,this.data.major,this.data.class,this.data.term,this.data.phone,this.data.email,this.data.firm,this.data.work,this.data.avatarUrl);
+  app.globalData.usrid = retid;
   },
   onChooseAvatar(e) {
     const { avatarUrl } = e.detail 
@@ -209,7 +208,12 @@ func(this.data.usrid,this.data.name,this.data.birthday,this.data.gender,this.dat
       avatarUrl,
     })
   },
-  
+  inputName(e){
+    console.log(e.detail);
+    this.setData({
+      name:e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -217,6 +221,7 @@ func(this.data.usrid,this.data.name,this.data.birthday,this.data.gender,this.dat
     this.setData({
       usrid:app.globalData.usrid
     })
+    
   },
 
   /**

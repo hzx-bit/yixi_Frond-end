@@ -13,6 +13,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    usrid:'',
+    usrid:'hutrhtryht',
   }
 })
