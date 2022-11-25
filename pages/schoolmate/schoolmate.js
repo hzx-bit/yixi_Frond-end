@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userid: null,
+    userid: "032002410",
     schoolmatesList:[
       {
         index: 0,
