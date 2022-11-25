@@ -5,8 +5,8 @@
     <text class="title">{{info.title}}</text>
     <view class="info">
       <view class="author-info">
-        <text class="author-name">作者：{{info.author}} </text>
-        <text class="author-date">发表于 {{info.publishDate}} </text>
+        <text class="author-name">{{info.author}} </text>
+        <text class="author-date"> {{info.publishData}} </text>
       </view>
       <view class="operation">
         <image wx:if="{{flag}}" bindtap="changeCollect" src="../../icon/collected.png"></image>
