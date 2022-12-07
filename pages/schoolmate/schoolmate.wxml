@@ -12,7 +12,7 @@
     <view class="search">
       <view class="search_in">
         <image src="/icon/search.png" class="search_icon"></image>
-        <input type="text" placeholder="搜索：姓名、年级、班级"/>
+        <input type="text" placeholder="输入姓名查找校友"/>
         <view class="search_btn">搜索</view>
       </view>
     </view>
