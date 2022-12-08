@@ -21,6 +21,11 @@ Page({
       url: '/pages/FAQ/FAQ',
     })
   },
+  naviToVphoto(){
+    wx.navigateTo({
+      url: '/pages/Vphoto/Vphoto',
+    })
+  },
   writedetail(){
     wx.navigateTo({
       url: '/pages/detailinfo/detailinfo',

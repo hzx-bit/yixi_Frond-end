@@ -185,13 +185,13 @@ Page({
    * 获取新闻内容
    */
   getNews(){
-    console.log("into local getnews");
+    // console.log("into local getnews");
     let that = this;
     wx.cloud.callFunction({
       name:'getNewsList',
       success: function(res){
-        console.log("into cloud getnews")
-        console.log(res.result.data);
+        // console.log("into cloud getnews")
+        // console.log(res.result.data);
         that.setData({
           newsList:res.result.data
         })

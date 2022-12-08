@@ -22,3 +22,9 @@
 <text>关于我们</text>
 <image src="/icon/next.png" mode="heightFix" class="next"></image>
 </view>
+
+<view class="item" bindtap="naviToVphoto">
+<image src="/icon/aboutus.png" mode="heightFix"></image>
+<text>虚拟合影</text>
+<image src="/icon/next.png" mode="heightFix" class="next"></image>
+</view>
