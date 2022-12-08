@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="head-bg" style="background-image: url( '{{ bgimg }}' );">
+<!-- <view class="view-row" style="color:#aaa;font-size:36rpx;margin:30rpx;border-bottom:1rpx solid #aaa;padding:10rpx">custom—拖拽、缩放和旋转</view> -->
+  <!-- <view style="font-size:32rpx;color:#aaa;margin-bottom:30rpx">请拖拽、缩放或旋转下图</view> -->
+  <cropper  url="{{ originUrl }}" ratio="{{ ratio }}"></cropper>
+  </view>
+</view>
+
+<view style="text-align: center; margin-top: 20px;">
+<text class="title">请选择合影地点</text>
+</view>
+<view class="divLine"></view>
+
+<view class="menu">
+<view bindtap="chooseBG" class="menu_item" id="bg0">
+  <image class="menu_img" src="{{ bglist[0] }}"></image>
+</view>
+<view bindtap="chooseBG" class="menu_item" id="bg1">
+  <image class="menu_img" src="{{ bglist[1] }}"></image>
+</view>
+<view bindtap="chooseBG" class="menu_item" id="bg2">
+  <image class="menu_img" src="{{ bglist[2] }}"></image>
+</view>
+<view bindtap="chooseBG" class="menu_item" id="bg3">
+  <image class="menu_img" src="{{ bglist[3] }}"></image>
+</view>
+</view>
+
+<view style="text-align: center;margin-top: 20px;">
+<text class="title">请选择合影形象</text>
+</view>
+<view class="divLine"></view>
+
+<view class="menu">
+<view bindtap="chooseRole" class="menu_item" id="role0">
+  <image class="menu_img" src='{{ rolelist[0] }}'></image>
+</view>
+<view bindtap="chooseRole" class="menu_item" id="role1">
+  <image class="menu_img" src='{{ rolelist[1] }}'></image>
+</view>
+<view bindtap="chooseRole" class="menu_item" id="role2">
+  <image class="menu_img" src='{{ rolelist[2] }}'></image>
+</view>
+<view bindtap="chooseRole" class="menu_item" id="role3">
+  <image class="menu_img" src='{{ rolelist[3] }}'></image>
+</view>
+</view>
+<view style="text-align: center;">
+  <button bindtap='chooseImg' class="btn">
+    <text style="float: left;position: relative; margin-left: 10px;margin-top: 0px;">上传真人图片</text>
+  </button>
+</view>
