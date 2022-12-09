@@ -47,6 +47,6 @@
 </view>
 <view style="text-align: center;">
   <button bindtap='chooseImg' class="btn">
-    <text style="float: left;position: relative; margin-left: 10px;margin-top: 0px;">上传真人图片</text>
+    <text style="float: left;position: relative; margin-left: 10px;margin-top: 0px;  color: #67c0f0;">上传真人图片</text>
   </button>
 </view>
