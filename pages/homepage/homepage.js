@@ -1,3 +1,4 @@
+var app =getApp();
 Page({
   /**
    * 页面的初始数据
@@ -10,6 +11,7 @@ Page({
     this.setData({
       avatarUrl,
     })
+    app.globalData.avatarUrl=avatarUrl;
   },
   naviToAboutus(){
     wx.navigateTo({
@@ -35,7 +37,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData({
+      avatarUrl:app.globalData.avatarUrl
+    })
   },
 
   /**
@@ -49,7 +53,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setData({
+      usrid:app.globalData.usrid,
+      avatarUrl:app.globalData.avatarUrl
+    })
   },
 
   /**

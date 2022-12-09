@@ -207,6 +207,7 @@ var retid = func(this.data.usrid,this.data.name,this.data.birthday,this.data.gen
     this.setData({
       avatarUrl,
     })
+      app.globalData.avatarUrl=avatarUrl;
   },
   inputName(e){
     console.log(e.detail);
@@ -219,7 +220,8 @@ var retid = func(this.data.usrid,this.data.name,this.data.birthday,this.data.gen
    */
   onLoad(options) {
     this.setData({
-      usrid:app.globalData.usrid
+      usrid:app.globalData.usrid,
+      avatarUrl:app.globalData.avatarUrl
     })
     
   },
@@ -235,7 +237,7 @@ var retid = func(this.data.usrid,this.data.name,this.data.birthday,this.data.gen
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+   
   },
 
   /**

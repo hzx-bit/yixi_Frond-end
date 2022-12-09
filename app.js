@@ -14,5 +14,6 @@ App({
   globalData: {
     userInfo: null,
     usrid:'hutrhtryht',
+    avatarUrl:'../../icon/avatar.png'
   }
 })
