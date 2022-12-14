@@ -13,7 +13,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    usrid:'hutrhtryht',
+    usrid:"",
     avatarUrl:'../../icon/avatar.png'
   }
 })
