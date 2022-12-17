@@ -6,6 +6,6 @@
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-picker": "@vant/weapp/picker/index"
   },
-  "navigationBarTitleText": "添加个人资料",
+  "navigationBarTitleText": "校友认证",
   "disableScroll":true  
 }

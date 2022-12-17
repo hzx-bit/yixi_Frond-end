@@ -21,6 +21,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "detailinfo",
+          "pathName": "pages/detailinfo/detailinfo",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

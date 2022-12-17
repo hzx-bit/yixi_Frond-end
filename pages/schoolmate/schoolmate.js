@@ -5,9 +5,36 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userid: "",
+    userid:'',
     schoolmatesList:[],
-    flag:true
+    flag:true,
+    name:''
+  },
+  fakeCallBack(){},
+  findStudent(){
+    console.log(this.data.name)
+    var that= this;
+    wx.cloud.callFunction({
+      name: 'findStudentByName',
+      data:{
+        name:this.data.name
+      },
+      success(res){
+        if(res.result.data.length){
+          that.setData({
+            schoolmatesList:res.result.data,
+            flag:true
+          })
+        }
+        else{
+          wx.showToast({
+            title: '查无此人!',
+            icon:'error',
+            duration:1000
+          })
+        }
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面加载
@@ -28,6 +55,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
+    
     if(app.globalData.usrid)
     {
       this.setData({
@@ -36,7 +64,7 @@ Page({
       if(this.data.flag)
       {
         var that = this;
-        for(var i =0 ;i<5;i++){
+        for(var i =0 ;i<6;i++){
           wx.cloud.callFunction({
             name: 'findStudentByUsrId',
             data:{
@@ -74,7 +102,27 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
+    this.setData({
+      schoolmatesList:[],
+      name:''
+    })
+    var that = this;
+    for(var i =0 ;i<6;i++){
+      wx.cloud.callFunction({
+        name: 'findStudentByUsrId',
+        data:{
+          usrId:i.toString()
+        },
+        success(res){
+          that.setData({
+            schoolmatesList:that.data.schoolmatesList.concat(res.result.data[0])
+          })
+        }
+      })
+    }
+    this.setData({
+      flag:false
+    })
   },
 
   /**

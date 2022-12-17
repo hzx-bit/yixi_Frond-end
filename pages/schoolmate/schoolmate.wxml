@@ -12,8 +12,8 @@
     <view class="search">
       <view class="search_in">
         <image src="/icon/search.png" class="search_icon"></image>
-        <input type="text" placeholder="输入姓名查找校友"/>
-        <view class="search_btn">搜索</view>
+        <input type="text" placeholder="输入姓名查找校友" model:value="{{name}}" bindinput="fakeCallBack"/>
+        <view class="search_btn" bindtap="findStudent">搜索</view>
       </view>
     </view>
   </view>

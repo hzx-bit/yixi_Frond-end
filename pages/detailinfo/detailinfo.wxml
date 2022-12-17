@@ -104,4 +104,6 @@
 <button class="submit" style="background-color: dodgerblue;" size="mini" type="primary"  form-type="submit" bindtap="submitInfo">
 <text style="line-height: 80rpx;font-size: 28rpx;">确认</text>
 </button>
+<view class="jg">您填写的信息仅用于校友认证，不做其他用途</view>
+<view class="jg">进行认证即代表同意授权相关信息</view>
 </view>

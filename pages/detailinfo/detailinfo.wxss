@@ -91,3 +91,9 @@ page{
   width: 200rpx;
   height: 80rpx;
 }
+.jg{
+  margin: 20rpx auto;
+  text-align: center;
+  color: red;
+  font-weight: 700;
+}
